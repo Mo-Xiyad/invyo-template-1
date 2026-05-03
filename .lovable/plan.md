@@ -20,7 +20,7 @@ Create a new `/invitation` route inspired by the "Majestic Template" reference s
 - Top section: draped curtain SVG illustration across the top (cream/gold beaded curtains)
 - Chandelier SVG hanging from center, with a slow CSS `pendulum` animation swinging side to side (~4s ease-in-out infinite, ~3deg rotation)
 - "We Are Getting Married" text
-- "Ziyad & Randa" in Playfair Display
+- "Omar & Layla" in Playfair Display
 - Date: June 27, 2026
 - Then all existing sections reused: CountdownTimer, DateLocation, AboutCouple, DressCode, RSVPSection, WeddingFooter
 - LanguageToggle at top

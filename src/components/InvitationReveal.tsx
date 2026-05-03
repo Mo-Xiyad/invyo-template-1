@@ -116,11 +116,11 @@ const InvitationReveal = () => {
         {/* Names */}
         {isArabic ? (
           <h1 className="font-amiri text-[36px] md:text-5xl text-[#1A1A2E] text-center leading-tight" dir="rtl">
-            محمد زياد
+            عمر محمود
           </h1>
         ) : (
           <h1 className="font-playfair text-[34px] md:text-5xl text-[#1A1A2E] text-center leading-tight tracking-wide">
-            Mohamed Ziyad
+            Omar Mahmoud
           </h1>
         )}
 
@@ -134,11 +134,11 @@ const InvitationReveal = () => {
 
         {isArabic ? (
           <h2 className="font-amiri text-[36px] md:text-5xl text-[#1A1A2E] text-center leading-tight" dir="rtl">
-            رندا المناعي
+            ليلى منصور
           </h2>
         ) : (
           <h2 className="font-playfair text-[34px] md:text-5xl text-[#1A1A2E] text-center leading-tight tracking-wide">
-            Randa Mannai
+            Layla Mansour
           </h2>
         )}
 

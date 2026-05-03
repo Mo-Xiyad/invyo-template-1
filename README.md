@@ -1,6 +1,6 @@
 # Wedding invitation site
 
-Private project for Ziyad & Randa Mannai.
+Private project for Omar & Layla Mansour.
 
 ## RSVP notifications (Slack)
 

@@ -93,9 +93,9 @@ const FamilyContent = () => {
           </div>
 
           {isArabic ? (
-            <p className="font-amiri text-2xl text-wedding-navy text-center" dir="rtl">محمد زياد <span className="text-wedding-pomegranate/70 mx-1">و</span> رندا المناعي</p>
+            <p className="font-amiri text-2xl text-wedding-navy text-center" dir="rtl">عمر محمود <span className="text-wedding-pomegranate/70 mx-1">و</span> ليلى منصور</p>
           ) : (
-            <p className="font-playfair text-2xl text-wedding-navy text-center">Mohamed Ziyad <span className="text-wedding-pomegranate/70 italic mx-1">&</span> Randa Mannai</p>
+            <p className="font-playfair text-2xl text-wedding-navy text-center">Omar Mahmoud <span className="text-wedding-pomegranate/70 italic mx-1">&</span> Layla Mansour</p>
           )}
 
           <div className="mt-8 px-8 py-3 rounded-full border border-wedding-gold/20 bg-wedding-gold/[0.04]">
@@ -472,7 +472,7 @@ const FamilyContent = () => {
             {t('With love & blessings,', 'مع الحب والبركة،')}
           </p>
           <p className={`text-2xl text-wedding-navy mt-1 ${isArabic ? 'font-amiri' : 'font-playfair'}`}>
-            {t('Ziyad & Randa', 'زياد و رندا')}
+            {t('Omar & Layla', 'عمر وليلى')}
           </p>
 
           <div className="flex items-center justify-center gap-3 mt-8">
@@ -483,7 +483,7 @@ const FamilyContent = () => {
             <div className="w-12 h-[1px] bg-wedding-gold/15" />
           </div>
 
-          <p className="text-wedding-navy/20 text-sm font-lato mt-6 tracking-[0.2em]">#ZiyadAndRanda2026</p>
+          <p className="text-wedding-navy/20 text-sm font-lato mt-6 tracking-[0.2em]">#OmarAndLayla2026</p>
         </div>
       </section>
     </div>

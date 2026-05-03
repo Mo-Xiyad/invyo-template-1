@@ -111,7 +111,7 @@ const WeddingFooter = () => {
           {t('With love & blessings,', 'مع الحب والبركة،')}
         </p>
         <p className={`text-2xl md:text-3xl text-[#1A1A2E] mt-1 ${isArabic ? 'font-amiri' : 'font-playfair'}`}>
-          {t('Mohamed Ziyad & Randa Mannai', 'محمد زياد و رندة المناعي')}
+          {t('Omar Mahmoud & Layla Mansour', 'عمر محمود وليلى منصور')}
         </p>
 
         <p
@@ -120,7 +120,7 @@ const WeddingFooter = () => {
           {t('Tunis · June 2026', 'تونس · جوان 2026')}
         </p>
 
-        <p className="text-[#1A1A2E]/22 text-xs font-lato mt-10 tracking-[0.22em]">#ZiyadAndRanda2026</p>
+        <p className="text-[#1A1A2E]/22 text-xs font-lato mt-10 tracking-[0.22em]">#OmarAndLayla2026</p>
       </div>
 
       {/* Deep water waves — slower counter-drift for depth */}

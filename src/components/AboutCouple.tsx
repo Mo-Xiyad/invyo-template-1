@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronDown } from 'lucide-react';
-import randaImg from '@/assets/randa.jpeg';
+import randaImg from '@/assets/randa.jpg';
 import ziyadImg from '@/assets/ziyad.jpg';
 
 const AboutCouple = () => {
@@ -75,12 +75,12 @@ const AboutCouple = () => {
             >
               <div className="relative bg-white p-1.5 shadow-lg" style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
                 <div className="w-[120px] h-[150px] overflow-hidden">
-                  <img src={ziyadImg} alt="Mohamed Ziyad"
+                  <img src={ziyadImg} alt="Omar Mahmoud"
                     className="w-full h-full object-cover object-top" />
                 </div>
                 <div className="mt-1.5 pb-1">
                   <p className={`text-[#1A1A2E] text-xs ${isArabic ? 'font-amiri text-sm' : 'font-playfair'}`}>
-                    {t('Mohamed Ziyad', 'محمد زياد')}
+                    {t('Omar Mahmoud', 'عمر محمود')}
                   </p>
                   <p className="text-[#1A1A2E]/30 text-[10px] font-lato tracking-wide">
                     {t('The Groom', 'العريس')}
@@ -113,12 +113,12 @@ const AboutCouple = () => {
             >
               <div className="relative bg-white p-1.5 shadow-lg" style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
                 <div className="w-[120px] h-[150px] overflow-hidden">
-                  <img src={randaImg} alt="Randa Mannai"
+                  <img src={randaImg} alt="Layla Mansour"
                     className="w-full h-full object-cover object-top" />
                 </div>
                 <div className="mt-1.5 pb-1">
                   <p className={`text-[#1A1A2E] text-xs ${isArabic ? 'font-amiri text-sm' : 'font-playfair'}`}>
-                    {t('Randa Mannai', 'رندا المناعي')}
+                    {t('Layla Mansour', 'ليلى منصور')}
                   </p>
                   <p className="text-[#1A1A2E]/30 text-[10px] font-lato tracking-wide">
                     {t('The Bride', 'العروس')}

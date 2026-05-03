@@ -300,11 +300,11 @@ const HeroNames = () => {
         {/* Groom name */}
         {isArabic ? (
           <h1 className="font-amiri text-[40px] md:text-5xl text-[#1A1A2E] tracking-wide text-center leading-tight" dir="rtl">
-            محمد زياد
+            عمر محمود
           </h1>
         ) : (
           <h1 className="font-playfair text-[38px] md:text-5xl text-[#1A1A2E] tracking-wide text-center leading-tight">
-            Mohamed Ziyad
+            Omar Mahmoud
           </h1>
         )}
 
@@ -320,11 +320,11 @@ const HeroNames = () => {
         {/* Bride name */}
         {isArabic ? (
           <h2 className="font-amiri text-[40px] md:text-5xl text-[#1A1A2E] tracking-wide text-center leading-tight" dir="rtl">
-            رندا المناعي
+            ليلى منصور
           </h2>
         ) : (
           <h2 className="font-playfair text-[38px] md:text-5xl text-[#1A1A2E] tracking-wide text-center leading-tight">
-            Randa Mannai
+            Layla Mansour
           </h2>
         )}
       </div>

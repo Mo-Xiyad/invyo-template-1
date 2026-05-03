@@ -61,9 +61,9 @@ const EnvelopeScreen = ({ onOpen }: { onOpen: () => void }) => {
               <ArabesqueRosette size={72} />
               <p className="mt-4 font-amiri text-sm text-[#1A1A2E]/40" dir="rtl">بسم الله الرحمن الرحيم</p>
               <p className="mt-3 font-lato text-[0.6rem] uppercase tracking-[0.5em] text-[#1A1A2E]/35">Wedding Invitation</p>
-              <h2 className="mt-4 font-playfair text-[1.8rem] leading-none text-[#1A1A2E]">Mohamed Ziyad</h2>
+              <h2 className="mt-4 font-playfair text-[1.8rem] leading-none text-[#1A1A2E]">Omar Mahmoud</h2>
               <span className="my-2 font-playfair text-2xl italic text-[#8B1A2E]/70">&amp;</span>
-              <h3 className="font-playfair text-[1.8rem] leading-none text-[#1A1A2E]">Randa Mannai</h3>
+              <h3 className="font-playfair text-[1.8rem] leading-none text-[#1A1A2E]">Layla Mansour</h3>
               <div className="mt-5 flex items-center gap-3">
                 <div className="h-px w-10 bg-[#C8813A]/25" />
                 <EightPointStar size={10} />

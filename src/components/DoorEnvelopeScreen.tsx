@@ -347,9 +347,9 @@ const DoorEnvelopeScreen = ({ onOpen }: { onOpen: () => void }) => {
 
             <div className="w-6 h-[0.5px] bg-wedding-gold/20 mx-auto my-3"/>
 
-            <p className="font-playfair text-wedding-navy text-base tracking-wide text-center">Mohamed Ziyad</p>
+            <p className="font-playfair text-wedding-navy text-base tracking-wide text-center">Omar Mahmoud</p>
             <span className="font-playfair italic text-wedding-pomegranate text-xl my-1">&</span>
-            <p className="font-playfair text-wedding-navy text-base tracking-wide">Randa Mannai</p>
+            <p className="font-playfair text-wedding-navy text-base tracking-wide">Layla Mansour</p>
 
             <div className="flex items-center gap-3 mt-4 mb-3">
               <div className="w-8 h-[0.5px] bg-gradient-to-r from-transparent to-wedding-gold/50"/>
