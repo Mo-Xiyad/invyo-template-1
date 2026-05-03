@@ -1,0 +1,475 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 94%;
+    --foreground: 240 33% 14%;
+    --card: 39 47% 92%;
+    --card-foreground: 240 33% 14%;
+    --popover: 39 47% 92%;
+    --popover-foreground: 240 33% 14%;
+    --primary: 32 55% 50%;
+    --primary-foreground: 39 47% 92%;
+    --secondary: 164 29% 33%;
+    --secondary-foreground: 39 47% 92%;
+    --muted: 37 38% 85%;
+    --muted-foreground: 240 33% 30%;
+    --accent: 348 68% 33%;
+    --accent-foreground: 39 47% 92%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 32 55% 50%;
+    --input: 32 40% 70%;
+    --ring: 32 55% 50%;
+    --radius: 0.75rem;
+
+    --wedding-gold: 32 55% 50%;
+    --wedding-navy: 240 33% 14%;
+    --wedding-cream: 39 47% 92%;
+    --wedding-pomegranate: 348 68% 33%;
+    --wedding-teal: 164 29% 33%;
+    --wedding-sand: 37 53% 95%;
+    --wedding-pale-gold: 35 46% 66%;
+  }
+
+  .dark {
+    --background: 240 33% 14%;
+    --foreground: 39 47% 92%;
+    --card: 240 33% 18%;
+    --card-foreground: 39 47% 92%;
+    --popover: 240 33% 18%;
+    --popover-foreground: 39 47% 92%;
+    --primary: 32 55% 50%;
+    --primary-foreground: 39 47% 92%;
+    --secondary: 164 29% 33%;
+    --secondary-foreground: 39 47% 92%;
+    --muted: 240 20% 22%;
+    --muted-foreground: 37 38% 75%;
+    --accent: 348 68% 33%;
+    --accent-foreground: 39 47% 92%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 32 40% 30%;
+    --input: 32 40% 30%;
+    --ring: 32 55% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+/* Font families */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+/* Zellige pattern backgrounds */
+.zellige-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8813A' stroke-width='0.5' opacity='0.15'%3E%3Cpath d='M40 0L54.14 14.14L40 28.28L25.86 14.14Z'/%3E%3Cpath d='M0 40L14.14 25.86L28.28 40L14.14 54.14Z'/%3E%3Cpath d='M40 51.72L54.14 65.86L40 80L25.86 65.86Z'/%3E%3Cpath d='M51.72 40L65.86 25.86L80 40L65.86 54.14Z'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3Ccircle cx='0' cy='0' r='6'/%3E%3Ccircle cx='80' cy='0' r='6'/%3E%3Ccircle cx='0' cy='80' r='6'/%3E%3Ccircle cx='80' cy='80' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.zellige-bg-dense {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8813A' stroke-width='0.6'%3E%3Cpath d='M30 0L38 8L30 16L22 8Z' opacity='0.25'/%3E%3Cpath d='M0 30L8 22L16 30L8 38Z' opacity='0.25'/%3E%3Cpath d='M30 44L38 52L30 60L22 52Z' opacity='0.25'/%3E%3Cpath d='M44 30L52 22L60 30L52 38Z' opacity='0.25'/%3E%3Ccircle cx='30' cy='30' r='5' opacity='0.2'/%3E%3Cpath d='M30 10L33 22L42 16L36 25L48 28L36 31L42 40L33 34L30 46L27 34L18 40L24 31L12 28L24 25L18 16L27 22Z' opacity='0.12'/%3E%3Ccircle cx='0' cy='0' r='4' opacity='0.15'/%3E%3Ccircle cx='60' cy='0' r='4' opacity='0.15'/%3E%3Ccircle cx='0' cy='60' r='4' opacity='0.15'/%3E%3Ccircle cx='60' cy='60' r='4' opacity='0.15'/%3E%3Cpath d='M15 0L18 6L24 4L20 9L26 12L20 13L22 18L18 15L15 20L12 15L8 18L10 13L4 12L10 9L6 4L12 6Z' opacity='0.08'/%3E%3Cpath d='M45 30L48 36L54 34L50 39L56 42L50 43L52 48L48 45L45 50L42 45L38 48L40 43L34 42L40 39L36 34L42 36Z' opacity='0.08'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.zellige-bg-rich {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8813A' stroke-width='0.6'%3E%3Cpath d='M60 0L74 14L60 28L46 14Z' opacity='0.2'/%3E%3Cpath d='M0 60L14 46L28 60L14 74Z' opacity='0.2'/%3E%3Cpath d='M60 92L74 106L60 120L46 106Z' opacity='0.2'/%3E%3Cpath d='M92 60L106 46L120 60L106 74Z' opacity='0.2'/%3E%3Ccircle cx='60' cy='60' r='8' opacity='0.15'/%3E%3Ccircle cx='0' cy='0' r='8' opacity='0.15'/%3E%3Ccircle cx='120' cy='0' r='8' opacity='0.15'/%3E%3Ccircle cx='0' cy='120' r='8' opacity='0.15'/%3E%3Ccircle cx='120' cy='120' r='8' opacity='0.15'/%3E%3Cpath d='M60 20L68 40L88 32L72 52L100 60L72 68L88 88L68 80L60 100L52 80L32 88L48 68L20 60L48 52L32 32L52 40Z' opacity='0.08'/%3E%3Cpath d='M30 0L36 14L50 8L40 22L60 30L40 32L48 48L36 40L30 55L24 40L12 48L20 32L0 30L20 22L10 8L24 14Z' opacity='0.06'/%3E%3Cpath d='M90 60L96 74L110 68L100 82L120 90L100 92L108 108L96 100L90 115L84 100L72 108L80 92L60 90L80 82L70 68L84 74Z' opacity='0.06'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Envelope animations */
+@keyframes flap-open {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(-180deg); }
+}
+@keyframes card-rise {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-120px); }
+}
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@keyframes float-up {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+@keyframes confetti-fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes splash-fade {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px hsl(32 55% 50% / 0.3)); }
+  50% { filter: drop-shadow(0 0 12px hsl(32 55% 50% / 0.6)); }
+}
+
+.animate-flap-open {
+  animation: flap-open 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform-origin: top center;
+}
+.animate-card-rise {
+  animation: card-rise 0.8s ease-out 0.8s forwards;
+}
+
+/* Card rising from envelope */
+@keyframes envelope-card-rise {
+  0% { transform: translateY(100%) scale(0.95); opacity: 0; }
+  30% { transform: translateY(40%) scale(0.97); opacity: 0.7; }
+  100% { transform: translateY(-5%) scale(1); opacity: 1; }
+}
+.envelope-card-rise {
+  animation: envelope-card-rise 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+.animate-float-up {
+  animation: float-up 0.6s ease-out forwards;
+}
+.animate-bounce-down {
+  animation: bounce-down 1.5s ease-in-out infinite;
+}
+.animate-confetti {
+  animation: confetti-fall 2.5s ease-in forwards;
+}
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.animate-splash-fade {
+  animation: splash-fade 1.5s ease-in-out forwards;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes crack-appear {
+  0% { stroke-dashoffset: 40; opacity: 0; }
+  100% { stroke-dashoffset: 0; opacity: 1; }
+}
+.animate-crack {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: crack-appear 0.4s ease-out forwards;
+}
+
+@keyframes float-particle {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0.2; }
+  25% { transform: translateY(-15px) translateX(5px); opacity: 0.5; }
+  50% { transform: translateY(-25px) translateX(-3px); opacity: 0.3; }
+  75% { transform: translateY(-10px) translateX(8px); opacity: 0.4; }
+}
+.animate-float-particle {
+  animation: float-particle 4s ease-in-out infinite;
+}
+
+@keyframes door-knock {
+  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+  15% { transform: translate(-50%, -50%) rotate(8deg); }
+  30% { transform: translate(-50%, -50%) rotate(-6deg); }
+  45% { transform: translate(-50%, -50%) rotate(5deg); }
+  60% { transform: translate(-50%, -50%) rotate(-3deg); }
+  75% { transform: translate(-50%, -50%) rotate(2deg); }
+}
+.animate-door-knock {
+  animation: door-knock 0.8s ease-in-out;
+}
+
+/* Envelope flap open */
+@keyframes envelope-flap-open {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(-180deg); }
+}
+.animate-envelope-flap-open {
+  animation: envelope-flap-open 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform-origin: top center;
+}
+
+/* Pendulum swing for chandelier */
+@keyframes pendulum {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+.animate-pendulum {
+  animation: pendulum 4s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/*
+ * WeddingHeroBackground (flat SVG): palm paths grouped by bbox; chandelier is a line-art overlay in HeroNames.
+ */
+.hero-bg-palm-l-sway {
+  animation: hero-palm-frond-sway 4.8s ease-in-out infinite;
+  transform-origin: 10% 90%;
+  transform-box: view-box;
+}
+
+.hero-bg-palm-r-sway {
+  animation: hero-palm-frond-sway-alt 5.4s ease-in-out infinite;
+  animation-delay: 0.35s;
+  transform-origin: 90% 90%;
+  transform-box: view-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-palm-l-sway,
+  .hero-bg-palm-r-sway {
+    animation: none !important;
+  }
+}
+
+/* Wedding footer — gentle sea motion */
+@keyframes footer-wave-drift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-32px);
+  }
+}
+
+@keyframes footer-wave-drift-reverse {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(28px);
+  }
+}
+
+@keyframes footer-palm-sway {
+  0%,
+  100% {
+    transform: rotate(-2.5deg);
+  }
+  50% {
+    transform: rotate(3.5deg);
+  }
+}
+
+@keyframes footer-haze-breathe {
+  0%,
+  100% {
+    opacity: 0.82;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes footer-shell-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes footer-star-twinkle {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.75;
+  }
+}
+
+@keyframes footer-shimmer-line {
+  0% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+
+.animate-footer-wave-drift {
+  animation: footer-wave-drift 14s ease-in-out infinite;
+}
+
+.animate-footer-wave-drift-reverse {
+  animation: footer-wave-drift-reverse 18s ease-in-out infinite;
+}
+
+.animate-footer-wave-drift-slow {
+  animation: footer-wave-drift 22s ease-in-out infinite;
+}
+
+.animate-footer-palm-sway {
+  animation: footer-palm-sway 5.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-footer-haze-breathe {
+  animation: footer-haze-breathe 8s ease-in-out infinite;
+}
+
+.animate-footer-shell-float {
+  animation: footer-shell-float 6s ease-in-out infinite;
+}
+
+.animate-footer-star-twinkle {
+  animation: footer-star-twinkle 2.8s ease-in-out infinite;
+}
+
+.animate-footer-shimmer-line {
+  animation: footer-shimmer-line 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-footer-wave-drift,
+  .animate-footer-wave-drift-reverse,
+  .animate-footer-wave-drift-slow,
+  .animate-footer-palm-sway,
+  .animate-footer-haze-breathe,
+  .animate-footer-shell-float,
+  .animate-footer-star-twinkle,
+  .animate-footer-shimmer-line {
+    animation: none !important;
+  }
+}
+
+/* Hero frame — palm crown sway (over illustration PNG) */
+@keyframes hero-palm-frond-sway {
+  0%,
+  100% {
+    transform: rotate(-2.8deg);
+  }
+  50% {
+    transform: rotate(3.8deg);
+  }
+}
+
+@keyframes hero-palm-frond-sway-alt {
+  0%,
+  100% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3.5deg);
+  }
+}
+
+.animate-hero-palm-frond-l {
+  animation: hero-palm-frond-sway 4.8s ease-in-out infinite;
+  transform-origin: 74px 44px;
+  transform-box: fill-box;
+}
+
+.animate-hero-palm-frond-r {
+  animation: hero-palm-frond-sway-alt 5.4s ease-in-out infinite;
+  animation-delay: 0.35s;
+  transform-origin: 74px 44px;
+  transform-box: fill-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-palm-frond-l,
+  .animate-hero-palm-frond-r {
+    animation: none !important;
+  }
+}
+
+/* Flying birds in celebration section */
+@keyframes bird-fly-1 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(6px, -4px); }
+  50% { transform: translate(12px, -1px); }
+  75% { transform: translate(6px, -5px); }
+}
+@keyframes bird-fly-2 {
+  0%, 100% { transform: translate(0, 0); }
+  30% { transform: translate(-8px, -3px); }
+  60% { transform: translate(-4px, -6px); }
+  80% { transform: translate(-10px, -2px); }
+}
+@keyframes bird-fly-3 {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-5px, -5px); }
+  50% { transform: translate(-10px, -2px); }
+  80% { transform: translate(-3px, -6px); }
+}
+@keyframes bird-fly-4 {
+  0%, 100% { transform: translate(0, 0); }
+  35% { transform: translate(8px, -3px); }
+  65% { transform: translate(4px, -5px); }
+}
+@keyframes bird-fly-5 {
+  0%, 100% { transform: translate(0, 0); }
+  40% { transform: translate(-6px, -4px); }
+  70% { transform: translate(-2px, -6px); }
+}
+.animate-bird-fly-1 { animation: bird-fly-1 6s ease-in-out infinite; }
+.animate-bird-fly-2 { animation: bird-fly-2 5s ease-in-out infinite 0.5s; }
+.animate-bird-fly-3 { animation: bird-fly-3 7s ease-in-out infinite 1s; }
+.animate-bird-fly-4 { animation: bird-fly-4 5.5s ease-in-out infinite 0.3s; }
+.animate-bird-fly-5 { animation: bird-fly-5 6.5s ease-in-out infinite 0.8s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bird-fly-1,
+  .animate-bird-fly-2,
+  .animate-bird-fly-3,
+  .animate-bird-fly-4,
+  .animate-bird-fly-5 {
+    animation: none !important;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but allow scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
